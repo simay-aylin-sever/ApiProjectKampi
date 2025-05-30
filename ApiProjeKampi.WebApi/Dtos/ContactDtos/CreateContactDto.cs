@@ -10,4 +10,4 @@
         public string OpenHours { get; set; }
     }
 }
-}
+
