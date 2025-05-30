@@ -37,7 +37,7 @@ namespace ApiProjeKampi.WebApi.Controllers
             _context.Chefs.Remove(value);
             _context.SaveChanges();
             return Ok("Şef sistemden silindi");
-        }
+        } 
 
         [HttpGet("Get Chef")]
         public IActionResult GetChef(int id)
