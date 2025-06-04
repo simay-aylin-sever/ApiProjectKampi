@@ -23,11 +23,11 @@ namespace ApiProjeKampi.WebApi.Controllers
         public IActionResult MessageList()
         {
             var value = _context.Messages.ToList();
-            return Ok(_mapper.Map<List<ResultMessageDto>>(value));
+            return Ok(_mapper.Map<List<ResultMessageDtos>>(value));
         }
 
         [HttpPost]
-        public IActionResult CreateMessage(CreateMessageDto createMessageDto)
+        public IActionResult CreateMessage(CreateMessageDtos createMessageDto)
         {
             var value = _mapper.Map<Message>(createMessageDto);
             _context.Messages.Add(value);
@@ -48,7 +48,7 @@ namespace ApiProjeKampi.WebApi.Controllers
         public IActionResult GetMessage(int id)
         {
             var value = _context.Messages.Find(id);
-            return Ok(_mapper.Map<GetByIdMessageDto>(value));
+            return Ok(_mapper.Map<GetByIdMessageDtos>(value));
         }
 
         [HttpPut]

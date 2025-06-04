@@ -16,7 +16,7 @@ namespace ApiProjeKampi.WebApi.Mapping
 
             CreateMap<Message, ResultMessageDtos>().ReverseMap();
             CreateMap<Message, CreateMessageDtos>().ReverseMap();
-            CreateMap<Message, UpdateMessageDtos>().ReverseMap();
+            CreateMap<Message, UpdateMessageDto>().ReverseMap();
             CreateMap<Message, GetByIdMessageDtos>().ReverseMap();
             
         }

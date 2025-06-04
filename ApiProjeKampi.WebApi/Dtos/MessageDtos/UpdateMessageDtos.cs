@@ -1,6 +1,6 @@
 ﻿namespace ApiProjeKampi.WebApi.Dtos.MessageDtos
 {
-    public class UpdateMessageDtos
+    public class UpdateMessageDto
     {
         public int MessageId { get; set; }
         public string NameSurname { get; set; }
